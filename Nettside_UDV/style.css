@@ -4,10 +4,45 @@
 }
 
 #header{
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: black;
   width: 100%;
   height: 8em;
+}
+
+#mainContent{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-gap: 1em;
+  justify-content: center;
+}
+
+.textBox1{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 1em;
+  background-color: blue;
+  height: 450px;
+}
+
+.image1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+.head1{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 15%;
+  background-color: green;
+}
+
+.text1{
+  background-color: yellow;
 }
