@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+a:link{
+  text-decoration: none;
+}
+
 /* +Header+ */
 #header{
   display: grid;
@@ -38,8 +42,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   height: 500px;
+  background-image: linear-gradient(to right, lightgray 46%, white 54%);
 }
 
+/* +Home+ */
 .textSection{
   display: grid;
   grid-template-rows: 4fr 4fr;
@@ -74,6 +80,7 @@
   height: 100px;
   background-color: black;
   border: 4px solid gray;
+  text-decoration: none;
 }
 
 .pictureSection{
@@ -81,5 +88,53 @@
   justify-content: center;
   align-items: center;
 }
+/* -Home- */
+
+/* +Spill+ */
+
+
+
+/* -Spill- */
 
 /* -Content- */
+
+
+
+/* +Footer+ */
+
+#footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 125px;
+  background-color: black;
+}
+
+.copyright{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  color: white;
+}
+
+.footerNavigation{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1.5em;
+}
+
+.footerFaq{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+}
+
+.footerContactUs{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+}
+
+/* -Footer- */
