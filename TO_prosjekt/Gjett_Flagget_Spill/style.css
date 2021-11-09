@@ -37,7 +37,7 @@ a:link{
 
 /* +Content+ */
 
-#content{
+#content-meny{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
@@ -92,7 +92,73 @@ a:link{
 
 /* +Spill+ */
 
+#content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+}
 
+.container{
+  padding: 5px;
+  width: 800px;
+  max-width: 80%;
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin: 20px 0;
+}
+
+:root{
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+.btn{
+  --hue: var(--hue-neutral);
+  background-color: hsl(var(--hue), 100%, 100%);
+  border: 1px solid hsl(var(--hue), 100%, 1%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.btn:hover{
+  border-color: gray;
+}
+
+.btn.correct{
+  --hue: var(--hue-correct);
+}
+
+.btn.wrong{
+  --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn{
+  font size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide{
+  display: none;
+}
 
 /* -Spill- */
 
@@ -120,7 +186,7 @@ a:link{
 .footerNavigation{
   display: grid;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 1.5em;
+  grid-gap: 1em;
 }
 
 .footerFaq{
