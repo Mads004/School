@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Gjett Flagget | Kontakt Oss</title>
+    <link rel="shortcut icon" href="favicon.png">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -20,8 +21,36 @@
       </div>
     </div>
 
-    <div id="content">
+    <div id="content-contact">
+      <div class="contactInformation">
 
+        <div class="contact-title">
+          <h1 style="font-size: 40px; font-family: sans-serif;">Send Oss En Melding!</h1>
+        </div>
+
+        <div class="contact-form">
+        <form action="index.html" method="post">
+
+          <label for="fname"><b>Fornavn:</b></label><br>
+          <input type="text" id="fname" name="fname" style="border:solid black 1.5px;"><br><br>
+
+          <label for="lname"><b>Etternavn:</b></label><br>
+          <input type="text" id="lname" name="lname"style="border:solid black 1.5px;"><br><br>
+
+          <label for="email"><b>E-mail:</b></label><br>
+          <input type="text" id="email" name="email"style="border:solid black 1.5px;"><br><br>
+
+          <label for="message"><b>Melding:</b></label><br>
+          <textarea rows="10" cols="20"style="border:solid black 1.5px;"></textarea>
+
+        </form>
+
+        </div>
+        <div class="submit-button-position">
+          <button class="submit-button" type="button" name="button" style="border-radius: 5px; border: solid black 2px;">Send Melding</button>
+        </div>
+
+      </div>
     </div>
   </body>
 </html>

@@ -7,6 +7,10 @@ a:link{
   text-decoration: none;
 }
 
+a,button:hover{
+  cursor: pointer;
+}
+
 /* +Header+ */
 #header{
   display: grid;
@@ -88,11 +92,54 @@ a:link{
   justify-content: center;
   align-items: center;
 }
+
 /* -Home- */
+
+/* Kontakt Oss */
+
+#content-contact{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 500px;
+}
+
+.contactInformation{
+  display: grid;
+  grid-template-rows: 2fr 8fr 1fr;
+  width: 100%;
+  height: 500px;
+}
+
+.contact-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.submit-button-position{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.submit-button{
+  width: 60px;
+  align: center;
+}
+
+/* Kontakt Oss */
 
 /* +Spill+ */
 
-#content{
+#content-game{
   display: flex;
   justify-content: center;
   align-items: center;
