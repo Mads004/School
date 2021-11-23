@@ -240,6 +240,10 @@ a,button:hover{
   display: none;
 }
 
+.visible {
+  display: block;
+}
+
 /* -Spill- */
 
 /* -Content- */
