@@ -190,6 +190,11 @@ a,button:hover{
   box-shadow: 0 0 10px 2px;
 }
 
+.flag{
+  display: flex;
+  justify-content: center;
+}
+
 .btn-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;

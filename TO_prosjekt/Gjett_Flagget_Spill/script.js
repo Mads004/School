@@ -65,3 +65,10 @@ const question = [
     ]
   }
 ]
+
+function buttonCheck(){
+  if(document.getElementByClass('btn').clicked == true)
+  {
+    console.log('button was clicked')
+  }
+}
