@@ -42,6 +42,12 @@
   border: 3px solid black;
 }
 
+.tempatureStyle{
+  font-size: 1.7rem;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
 button, button:hover{
   width: 99%;
   cursor: pointer;
