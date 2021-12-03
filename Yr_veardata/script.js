@@ -1,7 +1,7 @@
-fetch('https://api.met.no/weatherapi/locationforecast/2.0/complete?lat=-16.516667&lon=-68.166667&altitude=4150')
+fetch('https://api.met.no/weatherapi/locationforecast/2.0/complete?lat=60.1&lon=9.58&altitude=130')
   .then(response => response.json())
-  .then(data => console.log(data));
+  .then(data => console.log(data.properties.timeseries[0].data.instant.details));
 
-function getElementById('1'){
-  
-}
+  document.getElementById("btn1").onclick = function() {
+    console.log('Været for Ski');
+  }
