@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 125px;
+  background-color: black;
+  color: white;
+  font-size: 3.2rem;
+}
+
+#content{
+  height: 600px;
+}
+
+.content-title{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  font-size: 30px;
+  height: 80px;
+  width: 100%;
+}
+
+.content-sections{
+  height: 420px;
+  width: 50%;
+  margin-left: 25%;
+  border: 3px solid black;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* IT Row */
+.content-section-it{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-section-it-title,
+.content-section-it-pc,
+.content-section-it-lader,
+.content-section-it-ruter,
+.content-section-it-switch{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 25px;
+}
+
+/* Medier Row */
+.content-section-medier{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-section-medier-title,
+.content-section-medier-kamera,
+.content-section-medier-kamerastativ,
+.content-section-medier-lysstativ,
+.content-section-medier-sdkort{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 25px;
+}
+
+/* Submit Button */
+
+button:hover{
+  cursor: pointer;
+}
+
+.btn-submit{
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5%;
+  font-size: 20px;
+}
