@@ -15,7 +15,7 @@
 }
 
 #content{
-  height: 600px;
+  height: 660px;
 }
 
 .content-title{
@@ -28,11 +28,21 @@
   width: 100%;
 }
 
+.content-how-to{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  text-align: center;
+}
+
 .content-sections{
   height: 420px;
   width: 50%;
   margin-left: 25%;
   border: 3px solid black;
+  box-shadow: 5px 5px 15px;
   text-align: center;
   display: grid;
   justify-content: center;
@@ -41,39 +51,45 @@
 }
 
 /* IT Row */
-.content-section-it{
+.content-section-it, .content-section-it-title{
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 25px;
 }
 
-.content-section-it-title,
 .content-section-it-pc,
 .content-section-it-lader,
 .content-section-it-ruter,
 .content-section-it-switch{
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  font-size: 25px;
+  align-items: center;
+  font-size: 15px;
 }
 
 /* Medier Row */
-.content-section-medier{
+.content-section-medier, .content-section-medier-title{
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 25px;
 }
 
-.content-section-medier-title,
 .content-section-medier-kamera,
 .content-section-medier-kamerastativ,
 .content-section-medier-lysstativ,
 .content-section-medier-sdkort{
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  font-size: 25px;
+  align-items: center;
+  font-size: 15px;
+}
+
+.checkboxes{
+  width: 20px;
+  height: 20px;
+  margin-right: 1%;
 }
 
 /* Submit Button */
@@ -85,6 +101,6 @@ button:hover{
 .btn-submit{
   display: flex;
   justify-content: center;
-  margin-top: 1.5%;
+  margin-top: 1%;
   font-size: 20px;
 }
