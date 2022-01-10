@@ -72,3 +72,108 @@ function buttonCheck(){
     console.log('button was clicked')
   }
 }
+
+const data = {
+"questions": [
+{
+"question": "Hvilket flagg er dette?",
+"answers": [
+"Norge",
+"Sverige",
+"Danmark",
+"Finland"
+],
+"correctIndex": 1
+},
+{
+"question": "Hvilket flagg er dette?",
+"answers": [
+"Belgia",
+"Polen",
+"Tyskland",
+"Estland"
+],
+"correctIndex": 3
+},
+{
+"question": "Hvilket flagg er dette?",
+"answers": [
+"Spania",
+"Italia",
+"Sveits",
+"Frankrike"
+],
+"correctIndex": 4
+},
+{
+"question": "Hvilket flagg er dette?",
+"answers": [
+"Mexico",
+"Chile",
+"Spania",
+"Argentina"
+],
+"correctIndex": 3
+},
+{
+"question": "Hvilket flagg er dette?",
+"answers": [
+"Canada",
+"USA",
+"England",
+"Australia"
+],
+"correctIndex": 2
+},
+{
+"question": "Hvilket flagg er dette?",
+"answers": [
+"Bulgaria",
+"Nederland",
+"Polen",
+"Russland"
+],
+"correctIndex": 4
+},
+{
+"question": "Hvilket flagg er dette?",
+"answers": [
+"Egypt",
+"Israel",
+"India",
+"Syria"
+],
+"correctIndex": 1
+},
+{
+"question": "Hvilket flagg er dette?",
+"answers": [
+"Japan",
+"Vietnam",
+"Kina",
+"Taiwan"
+],
+"correctIndex": 3
+},
+{
+"question": "Hvilket flagg er dette?",
+"answers": [
+"Brasil",
+"Portugal",
+"Marokko",
+"Colombia"
+],
+"correctIndex": 1
+},
+{
+"question": "Hvilket flagg er dette?",
+"answers": [
+"New Zealand",
+"Indonesia",
+"Australia",
+"Madagaskar"
+],
+"correctIndex": 3
+},
+    ]
+}

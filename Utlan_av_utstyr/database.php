@@ -8,7 +8,7 @@
   }
 
   // write query for all utlan
-  $sql = 'SELECT PC, lader, ruter, switch FROM utstyr';
+  $sql = 'SELECT Pc, Lader, Ruter, Switch FROM it_utstyr';
 
   // make query & get result
   $result = mysqli_query($conn, $sql);
