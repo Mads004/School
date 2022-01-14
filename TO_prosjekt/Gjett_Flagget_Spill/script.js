@@ -14,8 +14,8 @@ const data = {
 "question": "Hvilket flagg er dette?",
 "answers": [
 "Belgia",
-"Polen",
 "Tyskland",
+"Polen",
 "Estland"
 ],
 "correctIndex": 3
@@ -182,43 +182,82 @@ function buttonCheck(){
 }
 
 document.getElementById("1").onclick = function() {
-  var correctIndex = data.questions[0].correctIndex;
+  var correctIndex = data.questions[count].correctIndex;
   if (correctIndex == 1) {
-    console.log("Du svarte riktig");
+    poeng++;
+    console.log("Du svarte riktig. Du har poeng: ", poeng);
   } else {
-    console.log("Du svarte feil");
+    console.log("Du svarte feil. Du har poeng: ", poeng);
   }
-  changeContent();
+  count++;
+  changeContent(count);
+  console.log("count ", count)
 }
 
 document.getElementById("2").onclick = function() {
-  var correctIndex = data.questions[0].correctIndex;
+  var correctIndex = data.questions[count].correctIndex;
   if (correctIndex == 2) {
-    console.log("Du svarte riktig");
+    poeng++;
+    console.log("Du svarte riktig. Du har poeng: ", poeng);
   } else {
-    console.log("Du svarte feil");
+    console.log("Du svarte feil. Du har poeng: ", poeng);
   }
-  changeContent();
+  count++;
+  changeContent(count);
+  console.log("count ", count)
 }
 
 document.getElementById("3").onclick = function() {
-  var correctIndex = data.questions[0].correctIndex;
-  console.log(correctIndex);
+  var correctIndex = data.questions[count].correctIndex;
+  if (correctIndex == 3) {
+    poeng++;
+    console.log("Du svarte riktig. Du har poeng: ", poeng);
+  } else {
+    console.log("Du svarte feil. Du har poeng: ", poeng);
+  }
+  count++;
+  changeContent(count);
+  console.log("count ", count)
 }
 
 document.getElementById("4").onclick = function() {
-  var correctIndex = data.questions[0].correctIndex;
-  console.log(correctIndex);
+  var correctIndex = data.questions[count].correctIndex;
+  if (correctIndex == 4) {
+    poeng++;
+    console.log("Du svarte riktig. Du har poeng: ", poeng);
+  } else {
+    console.log("Du svarte feil. Du har poeng: ", poeng);
+  }
+  count++;
+  changeContent(count);
+  console.log("count ", count)
 }
 
-function changeContent(){
+function changeContent(count){
 
-  var alternativ1 = data.questions[1].answers[0];
-  console.log(alternativ1);
-  document.getElementById("1").innerHTML = alternativ1;
+  if (count >= 9) {
+    console.log("Spillet er ferdig")
+  } else {
+    var alternativ1 = data.questions[count].answers[0];
+    console.log(alternativ1);
+    document.getElementById("1").innerHTML = alternativ1;
 
+    var alternativ2 = data.questions[count].answers[1];
+    console.log(alternativ2);
+    document.getElementById("2").innerHTML = alternativ2;
+
+    var alternativ3 = data.questions[count].answers[2];
+    console.log(alternativ3);
+    document.getElementById("3").innerHTML = alternativ3;
+
+    var alternativ4 = data.questions[count].answers[3];
+    console.log(alternativ4);
+    document.getElementById("4").innerHTML = alternativ4;
+  }
 
 }
+
+
 
 /*document.getElementById("1").onclick = function() {
   var correctIndex = data.questions[count].correctIndex;
