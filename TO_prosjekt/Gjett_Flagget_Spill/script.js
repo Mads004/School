@@ -8,7 +8,7 @@ const data = {
 "Danmark",
 "Finland"
 ],
-"correctIndex": 1
+"correctIndex": 0
 },
 {
 "question": "Hvilket flagg er dette?",
@@ -18,7 +18,7 @@ const data = {
 "Polen",
 "Estland"
 ],
-"correctIndex": 3
+"correctIndex": 1
 },
 {
 "question": "Hvilket flagg er dette?",
@@ -28,7 +28,7 @@ const data = {
 "Sveits",
 "Frankrike"
 ],
-"correctIndex": 4
+"correctIndex": 3
 },
 {
 "question": "Hvilket flagg er dette?",
@@ -38,7 +38,7 @@ const data = {
 "Spania",
 "Argentina"
 ],
-"correctIndex": 3
+"correctIndex": 2
 },
 {
 "question": "Hvilket flagg er dette?",
@@ -48,7 +48,7 @@ const data = {
 "England",
 "Australia"
 ],
-"correctIndex": 2
+"correctIndex": 1
 },
 {
 "question": "Hvilket flagg er dette?",
@@ -58,7 +58,7 @@ const data = {
 "Polen",
 "Russland"
 ],
-"correctIndex": 4
+"correctIndex": 3
 },
 {
 "question": "Hvilket flagg er dette?",
@@ -68,7 +68,7 @@ const data = {
 "India",
 "Syria"
 ],
-"correctIndex": 1
+"correctIndex": 0
 },
 {
 "question": "Hvilket flagg er dette?",
@@ -78,7 +78,7 @@ const data = {
 "Kina",
 "Taiwan"
 ],
-"correctIndex": 3
+"correctIndex": 2
 },
 {
 "question": "Hvilket flagg er dette?",
@@ -88,7 +88,7 @@ const data = {
 "Marokko",
 "Colombia"
 ],
-"correctIndex": 1
+"correctIndex": 0
 },
 {
 "question": "Hvilket flagg er dette?",
@@ -98,7 +98,7 @@ const data = {
 "Australia",
 "Madagaskar"
 ],
-"correctIndex": 3
+"correctIndex": 2
 },
     ]
 }
@@ -237,6 +237,9 @@ function changeContent(count){
 
   if (count >= 9) {
     console.log("Spillet er ferdig")
+    document.getElementById('question-container').style.display = "none";
+    document.getElementById('question').innerText = "Gratulerer, du er ferdig. Du har klart "+poeng+" av 10 poeng!";
+    document.getElementById('next-btn').style.display = "none";
   } else {
     var alternativ1 = data.questions[count].answers[0];
     console.log(alternativ1);
