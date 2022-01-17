@@ -257,7 +257,7 @@ function changeContent(count){
 
 
 
-if (count >= 9) {
+if (count >= 10) {
 console.log("Spillet er ferdig")
 document.getElementById('answer-buttons').style.display = "none";
 document.getElementById('question').innerText = "Gratulerer, du er ferdig. Du har klart "+poeng+" av 10 poeng!";
