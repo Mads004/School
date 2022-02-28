@@ -3,6 +3,7 @@
 myList = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,20]
 print("Dette er min liste:", myList)
 
+
 #A)
 
 def ena():
@@ -76,3 +77,21 @@ def enh():
     print("H = ", summen2)
 
 enh()
+
+#I
+
+def eni():
+    myList[4] = 1000
+    myList[7] = 1000
+    myList[16] =1000
+    print("I = ", myList)
+
+eni()
+
+
+#J
+
+def enj():
+    myList.insert(21, 21)
+    print("J = ", myList)
+
