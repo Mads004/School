@@ -92,6 +92,24 @@ eni()
 #J
 
 def enj():
-    myList.insert(21, 21)
+    myList.append(21)
     print("J = ", myList)
+
+enj()
+
+
+#K
+
+
+def enk():
+    myList3x = 0
+    while (myList3x < 100):
+        myList3x += 3
+        if(myList3x == 102):
+            stop()
+        print(myList3x)
+
+
+enk()
+
 
