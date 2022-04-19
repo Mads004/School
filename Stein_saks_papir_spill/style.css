@@ -10,7 +10,7 @@
 
 #header{
   width: 100%;
-  height: 7em;
+  height: 8em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@
 }
 
 #header-title{
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: sans-serif;
 }
 
@@ -28,11 +28,25 @@
   justify-content: center;
   align-items: center;
   grid-template-columns: 1fr 5fr 1fr;
-  height: 40em;
+  height: 30em;
   width: 100%;
 }
 
 #game{
   display: flex;
   justify-content: center;
+}
+
+#gameButton{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 4em;
+  background-color: black;
+  color: white;
+  padding: .1em;
+  border-radius: .3em;
+}
+
+#gameButton:hover{
+  cursor: pointer;
 }
