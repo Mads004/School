@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <title>Stein, saks, papir</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="script" href="script.js">
     <link rel="shortcut icon" href="bilder/spiller_saks.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
+
     <class id="container">
 
       <!-- Header -->
@@ -19,14 +21,40 @@
       <!-- Main Content -->
       <class id="main-content">
 
+        <div class="spiller-stein">
+          <center><img src="bilder/spiller_stein.png" alt=""></center>
+        </div>
+
         <div class="">
+
+        </div>
+
+        <div class="maskin-stein">
+          <center><img src="bilder/maskin_stein.png" alt=""></center>
+        </div>
+
+        <div class="spiller-saks">
+          <center><img src="bilder/spiller_saks.png" alt=""></center>
         </div>
 
         <div id="game">
-          <button id="gameButton">Start Spill</button>
+          <button onclick="game();" id="gameButton">Start Spill</button>
         </div>
 
-        <div class="">
+        <div class="maskin-saks">
+          <center><img src="bilder/maskin_saks.png" alt=""></center>
+        </div>
+
+        <div class="spiller-papir">
+          <center><img src="bilder/spiller_papir.png" alt=""></center>
+        </div>
+
+        <div class="game-score">
+          <center><h1>Poeng-score:</h1></center>
+        </div>
+
+        <div class="maskin-papir">
+          <center><img src="bilder/maskin_papir.png" alt=""></center>
         </div>
 
       </class>

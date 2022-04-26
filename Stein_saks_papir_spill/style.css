@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+img{
+  width: 8em;
+  border-radius: 90px;
+}
+
 #container{
   width: 100%;
   max-height: 60em;
@@ -27,7 +32,8 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   height: 30em;
   width: 100%;
 }
@@ -49,4 +55,14 @@
 
 #gameButton:hover{
   cursor: pointer;
+}
+
+.spiller_saks,
+.spiller_papir,
+.spiller_stein,
+.maskin_saks,
+.maskin_papir,
+.maskin_stein,
+.game-score{
+  visibility: hidden;
 }

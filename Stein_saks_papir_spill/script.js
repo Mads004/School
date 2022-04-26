@@ -2,11 +2,10 @@ const options = document.querySelectorAll(".options");
 let pScore = 0;
 let cScore = 0;
 
-gameButton.addEventListener('click', game)
-
 function game(){
-console.log('Started')
-document.getElementById('game').style.display = "none";
+console.log('Started Game')
+document.getElementById('game').style.visibility = "hidden";
+
 }
 
 options.forEach((option) => {
