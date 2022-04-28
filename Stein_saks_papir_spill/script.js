@@ -3,9 +3,8 @@ let pScore = 0;
 let cScore = 0;
 
 function game(){
-console.log('Started Game')
-document.getElementById('game').style.visibility = "hidden";
-
+console.log('Started Game | Game Button Is Hidden')
+document.getElementById('gameButton').style.display = "none";
 }
 
 options.forEach((option) => {

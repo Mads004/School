@@ -57,12 +57,6 @@ img{
   cursor: pointer;
 }
 
-.spiller_saks,
-.spiller_papir,
-.spiller_stein,
-.maskin_saks,
-.maskin_papir,
-.maskin_stein,
-.game-score{
-  visibility: hidden;
-}
+/*.hide-game{
+  display: none;
+}*/
