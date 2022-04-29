@@ -7,73 +7,73 @@ console.log('Started Game | Game Button Is Hidden')
 document.getElementById('gameButton').style.display = "none";
 }
 
-options.forEach((option) => {
-  option.addEventListener("click", function () {
-    const pInput = this.textContent;
 
-    const cOptions = ["Rock", "Paper", "Scissors"];
-    const cInput = cOptions[Math.floor(Math.random() * 3)];
-
-    compareInputs(pInput, cInput);
-    updateScore();
-    if (checkWinner()) {
-      pScore = cScore = 0;
-      updateScore();
-    }
-  });
-});
-
-function compareInputs(pInput, cInput) {
-  const currentMatch = `${pInput} vs ${cInput}`;
-  if (pInput === cInput) {
-    alert(`${currentMatch} is a Tie`);
-    return;
-  }
-
-if (pInput === "Rock") {
-  if (cInput === "Scissors") {
-    alert(`${currentMatch} = You Win`);
-      pScore++;
-    } else {
-      alert(`${currentMatch} = Computer Wins`);
-      cScore++;
-    }
-  }
-//Check for Paper
-else if (pInput === "Paper") {
-  if (cInput === "Rock") {
-    alert(`${currentMatch} = You Win`);
-    pScore++;
-  } else {
-    alert(`${currentMatch} = Computer Wins`);
-    cScore++;
-  }
-}
-//Check for Scissors
-else {
-  if (cInput === "Paper") {
-    alert(`${currentMatch} = You Win`);
-    pScore++;
-  } else {
-    alert(`${currentMatch} = Computer Wins`);
-    cScore++;
-  }
-}
-}
 
 function updateScore() {
   document.getElementById("p-score").textContent = pScore;
   document.getElementById("c-score").textContent = cScore;
 }
 
-function checkWinner() {
-  if (pScore === 5 || cScore === 5) {
-    const winner =
-      pScore === 5
-        ? "You win the game! Congratulations!"
-        : "Computer wins the game! Try again next time!";
-    alert(winner);
-    return true;
+
+
+function spillerStein() {
+  console.log('Spiller Stein');
+
+  const cOptions = ["maskin-stein", "maskin-papir", "maskin-saks"];
+  const computerChoice = cOptions[Math.floor(Math.random() * 3)];
+  console.log(computerChoice);
+
+  if (computerChoice == "maskin-stein") {
+    console.log('Uavgjort')
   }
-  return false;
+  else if (computerChoice == "maskin-saks") {
+    console.log('Spiller Vinner')
+    pScore++
+  }
+  else if (computerChoice == "maskin-papir"){
+    console.log('Spiller Taper')
+    cScore++
+  }
+  console.log('Player: ', pScore, ' -- Computer: ', cScore);
+  document.getElementById("cPoints").innerHTML = cScore;
+}
+
+function spillerSaks() {
+  console.log('Spiller Saks');
+
+  const cOptions = ["maskin-stein", "maskin-papir", "maskin-saks"];
+  const computerChoice = cOptions[Math.floor(Math.random() * 3)];
+  console.log(computerChoice);
+
+  if (computerChoice == "maskin-stein") {
+    console.log('Spiller Taper')
+    cScore++
+  }
+  else if (computerChoice == "maskin-saks") {
+    console.log('Uavgjort')
+  }
+  else if (computerChoice == "maskin-papir"){
+    console.log('Spiller Vinner')
+    pScore++
+  }
+}
+
+function spillerPapir() {
+  console.log('Spiller Papir');
+
+  const cOptions = ["maskin-stein", "maskin-papir", "maskin-saks"];
+  const computerChoice = cOptions[Math.floor(Math.random() * 3)];
+  console.log(computerChoice);
+
+  if (computerChoice == "maskin-stein") {
+    console.log('Spiller Vinner')
+    pScore++
+  }
+  else if (computerChoice == "maskin-saks") {
+    console.log('Spiller Taper')
+    cScore++
+  }
+  else if (computerChoice == "maskin-papir"){
+    console.log('Uavgjort')
+  }
 }

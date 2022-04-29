@@ -1,6 +1,8 @@
 *{
   margin: 0;
   padding: 0;
+  font-style: normal;
+  font-family: sans-serif;
 }
 
 img{
@@ -56,6 +58,16 @@ img{
 #gameButton:hover{
   cursor: pointer;
 }
+
+.spiller-stein:hover,
+.spiller-saks:hover,
+.spiller-papir:hover{
+  cursor: pointer;
+  background-color: lightgray;
+  border-radius: 180px;
+  border: 5px solid black;
+}
+
 
 /*.hide-game{
   display: none;
