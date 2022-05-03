@@ -2,22 +2,16 @@ const options = document.querySelectorAll(".options");
 let pScore = 0;
 let cScore = 0;
 
-function game(){
-console.log('Started Game | Game Button Is Hidden')
-document.getElementById('gameButton').style.display = "none";
-}
-
-
-
 function updateScore() {
   document.getElementById("p-score").textContent = pScore;
   document.getElementById("c-score").textContent = cScore;
+  document.getElementById("score").textContent = score;
 }
 
 
 
 function spillerStein() {
-  console.log('Spiller Stein');
+  console.log('spiller-stein');
 
   const cOptions = ["maskin-stein", "maskin-papir", "maskin-saks"];
   const computerChoice = cOptions[Math.floor(Math.random() * 3)];
@@ -36,10 +30,13 @@ function spillerStein() {
   }
   console.log('Player: ', pScore, ' -- Computer: ', cScore);
   document.getElementById("cPoints").innerHTML = cScore;
+  document.getElementById("sPoints").innerHTML = pScore;
+  document.getElementById("pScore").innerHTML = pScore;
+  document.getElementById("cScore").innerHTML = cScore;
 }
 
 function spillerSaks() {
-  console.log('Spiller Saks');
+  console.log('spiller-saks');
 
   const cOptions = ["maskin-stein", "maskin-papir", "maskin-saks"];
   const computerChoice = cOptions[Math.floor(Math.random() * 3)];
@@ -56,10 +53,15 @@ function spillerSaks() {
     console.log('Spiller Vinner')
     pScore++
   }
+  console.log('Player: ', pScore, ' -- Computer: ', cScore);
+  document.getElementById("cPoints").innerHTML = cScore;
+  document.getElementById("sPoints").innerHTML = pScore;
+  document.getElementById("pScore").innerHTML = pScore;
+  document.getElementById("cScore").innerHTML = cScore;
 }
 
 function spillerPapir() {
-  console.log('Spiller Papir');
+  console.log('spiller-papir');
 
   const cOptions = ["maskin-stein", "maskin-papir", "maskin-saks"];
   const computerChoice = cOptions[Math.floor(Math.random() * 3)];
@@ -76,4 +78,9 @@ function spillerPapir() {
   else if (computerChoice == "maskin-papir"){
     console.log('Uavgjort')
   }
+  console.log('Player: ', pScore, ' -- Computer: ', cScore);
+  document.getElementById("cPoints").innerHTML = cScore;
+  document.getElementById("sPoints").innerHTML = pScore;
+  document.getElementById("pScore").innerHTML = pScore;
+  document.getElementById("cScore").innerHTML = cScore;
 }

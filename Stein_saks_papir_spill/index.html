@@ -29,47 +29,55 @@
 
         </div>
 
-        <div class="maskin-stein hide-game">
+        <div class="maskin-stein">
           <center><img src="bilder/maskin_stein.png" alt=""></center>
         </div>
 
-        <div class="spiller-saks hide-game">
+        <div class="spiller-saks">
           <center><img onclick="spillerSaks();" src="bilder/spiller_saks.png"></center>
         </div>
 
-        <div id="game">
-          <button onclick="game();" id="gameButton">Start Spill</button>
+        <div class="game-score">
+          <div class="pScore">
+              <center><h1>Spiller: </h1></center>
+              <center id="pScore"><p>0</p></center>
+          </div>
+
+          <div class="cScore">
+            <center><h1>Maskin: </h1></center>
+            <center id="cScore"><p>0</p></center>
+          </div>
         </div>
 
-        <div class="maskin-saks hide-game">
+        <div class="maskin-saks">
           <center><img src="bilder/maskin_saks.png" alt=""></center>
         </div>
 
 
 
-        <div class="spiller-papir hide-game">
+        <div class="spiller-papir">
           <center><img onclick="spillerPapir();" src="bilder/spiller_papir.png" alt=""></center>
-        </div>
-
-        <div class="game-score hide-game">
-          <center><h1>Poeng-score: </h1></center>
-        </div>
-
-
-        <div class="maskin-papir hide-game">
-          <center><img src="bilder/maskin_papir.png" alt=""></center>
-        </div>
-
-        <div class="maskin-papir hide-game">
-          <center>POINTS: </center>
         </div>
 
         <div class="">
 
         </div>
 
-        <div class="maskin-points">
-          <center id="cPoints">POINTS: </center>
+
+        <div class="maskin-papir">
+          <center><img src="bilder/maskin_papir.png" alt=""></center>
+        </div>
+
+        <div class="maskin-papir">
+          <center><p>Spiller sin poengsum: </p></center><center id="sPoints">0</center>
+        </div>
+
+        <div class="">
+
+        </div>
+
+        <div class="">
+          <center><p>Maskin sin poengsum: </p></center><center id="cPoints">0</center>
         </div>
 
       </class>
