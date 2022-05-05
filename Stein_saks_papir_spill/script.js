@@ -19,13 +19,16 @@ function spillerStein() {
 
   if (computerChoice == "maskin-stein") {
     console.log('Uavgjort')
+    document.getElementById("result").innerHTML = 'Det ble uavgjort!';
   }
   else if (computerChoice == "maskin-saks") {
     console.log('Spiller Vinner')
+    document.getElementById("result").innerHTML = 'Spiller vant!';
     pScore++
   }
   else if (computerChoice == "maskin-papir"){
     console.log('Spiller Taper')
+    document.getElementById("result").innerHTML = 'Maskin vant!';
     cScore++
   }
   console.log('Player: ', pScore, ' -- Computer: ', cScore);
@@ -44,13 +47,16 @@ function spillerSaks() {
 
   if (computerChoice == "maskin-stein") {
     console.log('Spiller Taper')
+    document.getElementById("result").innerHTML = 'Maskin vant!';
     cScore++
   }
   else if (computerChoice == "maskin-saks") {
     console.log('Uavgjort')
+    document.getElementById("result").innerHTML = 'Det ble uavgjort!';
   }
   else if (computerChoice == "maskin-papir"){
     console.log('Spiller Vinner')
+    document.getElementById("result").innerHTML = 'Spiller vant!';
     pScore++
   }
   console.log('Player: ', pScore, ' -- Computer: ', cScore);
@@ -69,14 +75,17 @@ function spillerPapir() {
 
   if (computerChoice == "maskin-stein") {
     console.log('Spiller Vinner')
+    document.getElementById("result").innerHTML = 'Spiller vant!';
     pScore++
   }
   else if (computerChoice == "maskin-saks") {
     console.log('Spiller Taper')
+    document.getElementById("result").innerHTML = 'Maskin vant!';
     cScore++
   }
   else if (computerChoice == "maskin-papir"){
     console.log('Uavgjort')
+    document.getElementById("result").innerHTML = 'Det ble uavgjort!';
   }
   console.log('Player: ', pScore, ' -- Computer: ', cScore);
   document.getElementById("cPoints").innerHTML = cScore;

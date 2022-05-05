@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-family: sans-serif;
+}
+
+img{
+  width: 8em;
+  border-radius: 90px;
+}
+
+#container{
+  width: 100%;
+  max-height: 60em;
+}
+
+#header{
+  width: 100%;
+  height: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+#header-title{
+  font-size: 4rem;
+  font-family: sans-serif;
+}
+
+#main-content{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 30em;
+  width: 100%;
+}
+
+#game{
+  display: flex;
+  justify-content: center;
+}
+
+#gameButton{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 4em;
+  background-color: black;
+  color: white;
+  padding: .1em;
+  border-radius: .3em;
+}
+
+#gameButton:hover{
+  cursor: pointer;
+}
+
+.spiller-stein:hover,
+.spiller-saks:hover,
+.spiller-papir:hover{
+  cursor: pointer;
+  background-color: lightgray;
+  border-radius: 180px;
+  border: 5px solid black;
+}
+
+.game-score{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*.hide-game{
+  display: none;
+}*/
