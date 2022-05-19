@@ -17,7 +17,26 @@ io.on('connection', function(socket) {
    console.log('A user connected');
 
 //Whenever someone disconnects this piece of code executed
-   socket.on('disconnect', function () {
-      console.log('A user disconnected');
-   });
+socket.on('disconnect', function () {
+    console.log('A user disconnected');
+  });
+});
+
+io.on('connection', (socket) => {
+  socket.on('chat message', (msg) => {
+    console.log('message: ' + msg);
+  });
+});
+
+// This will emit the event to all connected sockets
+io.emit('some event', { someProperty: 'some value', otherProperty: 'other value' });
+
+io.on('connection', (socket) => {
+  socket.broadcast.emit('hi');
+});
+
+io.on('connection', (socket) => {
+  socket.on('chat message', (msg) => {
+    io.emit('chat message', msg);
+  });
 });
