@@ -6,21 +6,18 @@ function fetchJoke() {
 
   fetch(inputURL)
   .then(response => response.json())
-  .then(data => console.log(data));
+  .then(data => updateValue(data.joke));
 
 }
 
 function showText() {
-  console.log("Found InnerText")
+  console.log("Found InnerText");
   document.getElementById('vits').innerText = "En vits";
 }
 
-function updateValue() {
+function updateValue(data) {
    document.getElementById('vits').display = "none";
-}
-
-if(document.getElementById('newVits').clicked == true){
- console.log("button was clicked");
+   document.getElementById('vits').innerText = data;
 }
 
 fetchJoke();
